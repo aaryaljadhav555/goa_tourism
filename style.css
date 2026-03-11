@@ -1,0 +1,75 @@
+body{
+font-family: Arial;
+margin:0;
+background:#f4f4f4;
+}
+
+header{
+background:#008080;
+color:white;
+padding:15px;
+text-align:center;
+}
+
+nav ul{
+list-style:none;
+padding:0;
+}
+
+nav ul li{
+display:inline;
+margin:10px;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+font-weight:bold;
+}
+
+.hero{
+background:url('../images/beach.jpg');
+color:white;
+text-align:center;
+padding:100px 20px;
+}
+
+.cards{
+display:flex;
+justify-content:center;
+gap:20px;
+padding:40px;
+}
+
+.card{
+background:white;
+padding:15px;
+width:250px;
+box-shadow:0 0 10px rgba(0,0,0,0.2);
+border-radius:10px;
+}
+
+.card img{
+width:100%;
+border-radius:10px;
+}
+
+.gallery{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:10px;
+padding:30px;
+}
+
+.gallery img{
+width:100%;
+border-radius:10px;
+}
+
+form{
+width:300px;
+margin:auto;
+display:flex;
+flex-direction:column;
+gap:10px;
+}
