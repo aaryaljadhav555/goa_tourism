@@ -1,64 +1,91 @@
 body{
-font-family: Arial;
 margin:0;
-background:#f4f4f4;
+font-family:Arial;
+background:#f2fbff;
 }
 
 header{
-background:#008080;
+background:linear-gradient(90deg,#00b4db,#0083b0);
+padding:20px;
 color:white;
-padding:15px;
 text-align:center;
-}
-
-nav ul{
-list-style:none;
-padding:0;
-}
-
-nav ul li{
-display:inline;
-margin:10px;
 }
 
 nav a{
 color:white;
+margin:15px;
 text-decoration:none;
 font-weight:bold;
 }
 
 .hero{
-background:url('../images/beach.jpg');
+background:url('../images/beach1.jpg');
+background-size:cover;
 color:white;
 text-align:center;
-padding:100px 20px;
+padding:120px 20px;
+font-size:30px;
+}
+
+.about{
+text-align:center;
+padding:40px;
+}
+
+.highlights{
+background:#e6f7ff;
+padding:40px;
 }
 
 .cards{
 display:flex;
 justify-content:center;
-gap:20px;
-padding:40px;
+gap:25px;
+flex-wrap:wrap;
 }
 
 .card{
 background:white;
-padding:15px;
 width:250px;
-box-shadow:0 0 10px rgba(0,0,0,0.2);
-border-radius:10px;
+border-radius:12px;
+box-shadow:0 5px 15px rgba(0,0,0,0.2);
+overflow:hidden;
+transition:0.3s;
+}
+
+.card:hover{
+transform:scale(1.05);
 }
 
 .card img{
 width:100%;
-border-radius:10px;
+}
+
+.card h3{
+padding:10px;
+}
+
+.card p{
+padding:10px;
+}
+
+.activities{
+background:#00b4db;
+color:white;
+text-align:center;
+padding:40px;
+}
+
+.activities ul{
+list-style:none;
+font-size:20px;
 }
 
 .gallery{
 display:grid;
 grid-template-columns:repeat(3,1fr);
-gap:10px;
-padding:30px;
+gap:15px;
+padding:40px;
 }
 
 .gallery img{
@@ -66,10 +93,45 @@ width:100%;
 border-radius:10px;
 }
 
-form{
-width:300px;
-margin:auto;
+.title{
+text-align:center;
+margin:30px;
+}
+
+.culture{
+text-align:center;
+padding:40px;
+}
+
+.culture img{
+width:400px;
+border-radius:15px;
+}
+
+.contact{
 display:flex;
 flex-direction:column;
+width:300px;
+margin:auto;
 gap:10px;
+}
+
+.contact input,
+.contact textarea{
+padding:10px;
+}
+
+.contact button{
+background:#00b4db;
+color:white;
+border:none;
+padding:10px;
+cursor:pointer;
+}
+
+footer{
+background:#0083b0;
+color:white;
+text-align:center;
+padding:15px;
 }
